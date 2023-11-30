@@ -6,4 +6,4 @@
   tasks:
     - name: access variable
       ansible.builtin.debug:
-        msg: {{abc}}
+        msg: abc = {{ abc }}
