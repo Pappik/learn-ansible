@@ -1,0 +1,3 @@
+- name: print from roles
+  ansible.builtin.debug:
+    msg: "from roles"
