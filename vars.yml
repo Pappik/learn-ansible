@@ -7,3 +7,13 @@
     - name: access variable
       ansible.builtin.debug:
         msg: abc = {{ abc }}
+
+- name: at task level
+  hosts: all
+  connection: local
+  tasks:
+    - name: access
+      ansible.builtin.debug:
+        msg: abc = {{ abc }}
+      vars:
+        abc: task.com
