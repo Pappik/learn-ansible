@@ -1,0 +1,9 @@
+- name: access variable from play level
+  hosts: all
+  connection: local
+  vars:
+    abc = "clark.in"
+  tasks:
+    - name: access variable
+      ansible.builtin.debug:
+        msg: {{abc}}
